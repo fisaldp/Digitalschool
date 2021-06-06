@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #efefef;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: #4b3965;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+    color: #4b3965;
+}
+
+header ul li a:hover {
+    background-color: #4b3965;
+    color: #efefef;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    text-align: center;
+    padding: 20px 0;
+    color: #4b3965;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #333;
+    color: #666;
+    text-align: center;
+}
+
+.bg-loader {
+    background-color: #efefef;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #efefef;
+    border-radius: 50%;
+    border-top-color: #4b3965;
+    border-right-color: #4b3965;
+    border-bottom-color: #4b3965;
+    animation: putar .5s linear infinite;
+}
+
+.label {
+    background-color: #4b3965;
+    color: white;
+}
+
+.tombol {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.tombol .tombolForm input {
+    width: 50%;
+    padding: 5px 0;
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+    border: 2px solid #333;
+    background-color: #796992;
+}
+
+.tombol .tombolForm input[name="keyword"] {
+    padding-left: 10px;
+}
+
+.tombol .tombolForm button {
+    width: 50px;
+    padding: 5px 0;
+    font-size: 18px;
+    color: white;
+    border: 2px solid black;
+    background-color: #796992;
+}
+
+.tabel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #000;
+}
+
+.tabel table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.tabel th,
+.tabel td {
+    padding: 5px 5px;
+    border: 1px solid #000;
+}
